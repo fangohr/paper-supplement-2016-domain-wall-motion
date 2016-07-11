@@ -45,29 +45,29 @@ def update_fun2(t):
 def load_data():
     m = np.load('dyn1/m_66.npy')
     m.shape = (-1,3)
-    mx = m[:,1]
+    mx = m[:,0]
     m2 = np.load('dyn2/m_66.npy')
     m2.shape = (-1,3)
-    mx2 = m2[:,1]
+    mx2 = m2[:,0]
     return mx, mx2
 
 def load_data1(n1,n2):
     m = np.load('beta_0.05_u_400/m_%d.npy'%n1)
     m.shape = (-1,3)
-    mx = m[:,1]
+    mx = m[:,0]
     m2 = np.load('beta_0.05_u_400/m_%d.npy'%n2)
     m2.shape = (-1,3)
-    mx2 = m2[:,1]
+    mx2 = m2[:,0]
     return mx, mx2
 
 
 def load_data2(n1,n2):
     m = np.load('beta_0.1_u_500/m_%d.npy'%n1)
     m.shape = (-1,3)
-    mx = m[:,1]
+    mx = m[:,0]
     m2 = np.load('beta_0.1_u_500/m_%d.npy'%n2)
     m2.shape = (-1,3)
-    mx2 = m2[:,1]
+    mx2 = m2[:,0]
     return mx, mx2
 
 def save_plot():
@@ -92,7 +92,7 @@ def save_plot():
     p2,= ax1.plot(xs,m2*1e4,'-', linewidth=0.8, color='steelblue', label='$u_2$')
     
     #ax1.set_xlabel('z/a')
-    ax1.set_ylabel('$m_y$ $[10^{-4}]$')
+    ax1.set_ylabel('$m_x$ $[10^{-4}]$')
     ax1.set_ylim(-1.5,3)
     plt.yticks([-1, 0, 1, 2])
     plt.xticks([])
@@ -132,7 +132,7 @@ def save_plot():
     
     #ax0.set_xlabel('z/a')
 
-    ax0.set_ylabel('$m_y$ $[10^{-4}]$')
+    ax0.set_ylabel('$m_x$ $[10^{-4}]$')
     ax0.set_ylim(-3,3)
     ax0.set_xlim(0,4000)
     
@@ -153,7 +153,7 @@ def save_plot():
     p2,= ax1.plot(xs,m2*1e3,'-', linewidth=0.8, color='slateblue', label="$t_2$")
     
     ax1.set_xlabel('z/a',fontsize=12)
-    ax1.set_ylabel('$m_y$ $[10^{-3}]$')
+    ax1.set_ylabel('$m_x$ $[10^{-3}]$')
     ax1.set_ylim(-1,1)
     plt.yticks([-1, 0, 1])
     ax1.set_xlim(0,4000)
