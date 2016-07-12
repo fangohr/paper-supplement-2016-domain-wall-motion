@@ -11,7 +11,7 @@ global_mu_s = 1/mu0*global_V
 global_J = 2e-20
 global_D = 0.01*global_J
 
-global_mesh = CuboidMesh(nx=1, ny=1, nz=4000,
+global_mesh = CuboidMesh(nx=1, ny=1, nz=8000,
                   dx=1.0, dy=1.0, dz=1.0,
                   unit_length=1e-9)
 

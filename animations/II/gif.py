@@ -8,7 +8,7 @@ from moviepy.video.io.bindings import mplfig_to_npimage
 from moviepy.editor import VideoClip
 import moviepy.editor as mpy
 
-duration = 4
+duration = 9
 
 font = {'family' : 'serif',
         'weight' : 'normal',
@@ -41,7 +41,7 @@ fig = plt.figure(figsize=(6, 3.2))
 gs = gridspec.GridSpec(2, 1,height_ratios=[1,1])
 
 fig_mpl, ax1 = plt.subplots(1,figsize=(8,2.6), facecolor='white')
-xs = np.linspace(0.5,3999.5,4000) # the x vector
+xs = np.linspace(0.5,7999.5,8000) # the x vector
 m1,m2 = read_data(0)
 
 ax1 = plt.subplot(gs[0])
@@ -56,9 +56,9 @@ l1 = plt.legend(loc='upper right', shadow=True, frameon=False,labelspacing=0, ha
 custom_legend(l1)
 
 ax2 = plt.subplot(gs[1])
-p2,= ax2.plot(xs,m2*1e3,'-', linewidth=0.8, color='steelblue', label=r'$\beta=0.1, u=500$ m/s')
+p2,= ax2.plot(xs,m2*1e2,'-', linewidth=0.8, color='steelblue', label=r'$\beta=0.1, u=500$ m/s')
 ax2.set_xlabel('z/a')
-ax2.set_ylabel('$m_x$ $[10^{-3}]$')
+ax2.set_ylabel('$m_x$ $[10^{-2}]$')
 ax2.set_ylim(-1,1)
 plt.yticks([-1, 0, 1])
 
@@ -73,7 +73,7 @@ def make_frame_mpl(t):
     #print(int(t*10))
     m1,m2 = read_data(int(t*10))
     p1.set_ydata(m1*1e4)
-    p2.set_ydata(m2*1e3)
+    p2.set_ydata(m2*1e2)
     ax1.set_title('t=%0.2f ns'%(t*0.2))
     return mplfig_to_npimage(fig_mpl) # RGB image of the figure
  
