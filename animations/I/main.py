@@ -34,7 +34,8 @@ def init_m(r):
 def relax_system():
     """
     This function creates a simulation object, and relaxes the system,
-    saving the magnetisation after the 
+    saving the magnetisation after the relaxation.
+    """
     # Only relaxation
     sim = Sim(global_mesh, name='relax')
 
