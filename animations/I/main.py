@@ -17,7 +17,7 @@ global_mesh = CuboidMesh(nx=1, ny=1, nz=4000,
                   dx=1.0, dy=1.0, dz=1.0,
                   unit_length=1e-9)
 
-def init_m(r):
+def init_m(pos):
     """
     This function initialises an approximate domain wall in the z direction.
     """
@@ -126,7 +126,7 @@ def do_sim(u=300, beta=0.03, P = 0.7):
     print('je=', je)
 
     excite_system(beta=beta, jz=je, current_function=current_function_1, name='sinusoidal_current')
-    excite_system(beta=beta, jz=je, current_function=current_function_1, name='square_wave_current')
+    excite_system(beta=beta, jz=je, current_function=current_function_2, name='square_wave_current')
 
 
 if __name__ == '__main__':

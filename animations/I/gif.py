@@ -41,12 +41,12 @@ def varying_u(t):
         
 
 def read_data(i):
-    m = np.load('dyn1_npys/m_%d.npy'%i)
+    m = np.load('sinusoidal_current_npys/m_%d.npy'%i)
     m.shape = (-1,3)
-    my = m[:,1]
-    m2 = np.load('dyn2_npys/m_%d.npy'%i)
+    my = m[:,0]
+    m2 = np.load('square_wave_current_npys/m_%d.npy'%i)
     m2.shape = (-1,3)
-    my2 = m2[:,1]
+    my2 = m2[:,0]
 
     i1 = np.argmin(np.abs(m[:,2]))
     i2 = np.argmin(np.abs(m2[:,2]))
@@ -97,11 +97,11 @@ custom_legend(l1)
 #ax2.set_xlabel('Time (ns)',fontsize=8)
 
 
-p1,= ax3.plot(xs,m1*1e4,'-', linewidth=0.8, color='chocolate', label='$m_y$ with $u_1$')   
-p2,= ax3.plot(xs,m2*1e4,'-', linewidth=0.8, color='steelblue', label='$m_y$ with $u_2$')
+p1,= ax3.plot(xs,m1*1e4,'-', linewidth=0.8, color='chocolate', label='$m_x$ with $u_1$')   
+p2,= ax3.plot(xs,m2*1e4,'-', linewidth=0.8, color='steelblue', label='$m_x$ with $u_2$')
 
 ax3.set_xlabel('z/a')
-ax3.set_ylabel('$m_y$ $[10^{-4}]$')
+ax3.set_ylabel('$m_x$ $[10^{-4}]$')
 ax3.set_ylim(-2,4)
 plt.yticks([-2, 0, 2, 4])
 #plt.xticks([])
