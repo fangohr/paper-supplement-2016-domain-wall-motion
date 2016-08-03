@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    493898,       8977]
-NotebookOptionsPosition[    493045,       8945]
-NotebookOutlinePosition[    493398,       8961]
-CellTagsIndexPosition[    493355,       8958]
+NotebookDataLength[    494100,       8981]
+NotebookOptionsPosition[    493193,       8947]
+NotebookOutlinePosition[    493600,       8965]
+CellTagsIndexPosition[    493557,       8962]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1119,7 +1119,7 @@ J32aD/5rl92hT9OI//+/Aqf+70oj/gdA4zKX
    3.673784188102365*^9, 3.67378420625812*^9}, 3.673784316393504*^9, {
    3.673784410732979*^9, 3.673784472251771*^9}, 3.6737847086126957`*^9, {
    3.6737859592024393`*^9, 3.673785987831972*^9}, 3.677214214836318*^9, 
-   3.6772142497219877`*^9}]
+   3.6772142497219877`*^9, {3.679196646849175*^9, 3.679196661749689*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -4559,7 +4559,8 @@ lcxuuDy7w033D3iqbsjrKMotvV/Oq7P8D0xKLhE=
   Selectable->True]], "Output",
  CellChangeTimes->{
   3.673785810608837*^9, {3.673785845171733*^9, 3.673785944967173*^9}, 
-   3.677214215131138*^9, 3.677214249996317*^9}]
+   3.677214215131138*^9, 3.677214249996317*^9, {3.679196647145677*^9, 
+   3.679196662090774*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -8923,7 +8924,8 @@ lcxuuDy7w033D3iqbsjrKMotvV/Oq7P8D0xKLhE=
    3.6737843201987267`*^9, 3.673784326999856*^9}, 3.673784393068218*^9, 
    3.67378452654498*^9, 3.673784712779748*^9, 3.6737850692057734`*^9, {
    3.673785922014717*^9, 3.673785949700388*^9}, 3.6737859920818167`*^9, 
-   3.677214215331922*^9, 3.6772142501973333`*^9}]
+   3.677214215331922*^9, 3.6772142501973333`*^9, {3.6791966473770323`*^9, 
+   3.679196662341824*^9}}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -8945,6 +8947,8 @@ Cell[BoxData[{
 },
 WindowSize->{1280, 703},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
 FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 29, \
 2015)",
 StyleDefinitions->"Default.nb"
@@ -8964,21 +8968,21 @@ Cell[558, 20, 1190, 27, 80, "Input"],
 Cell[1751, 49, 528, 9, 63, "Input"],
 Cell[CellGroupData[{
 Cell[2304, 62, 5117, 101, 80, "Input"],
-Cell[7424, 165, 52050, 956, 315, "Output"]
+Cell[7424, 165, 52096, 956, 315, "Output"]
 }, Open  ]],
-Cell[59489, 1124, 92, 1, 28, "Input"],
-Cell[59584, 1127, 92, 1, 28, "Input"],
+Cell[59535, 1124, 92, 1, 28, "Input"],
+Cell[59630, 1127, 92, 1, 28, "Input"],
 Cell[CellGroupData[{
-Cell[59701, 1132, 4313, 83, 63, "Input"],
-Cell[64017, 1217, 185541, 3344, 315, "Output"]
+Cell[59747, 1132, 4313, 83, 63, "Input"],
+Cell[64063, 1217, 185591, 3345, 315, "Output"]
 }, Open  ]],
-Cell[249573, 4564, 673, 9, 28, "Input"],
-Cell[250249, 4575, 94, 1, 28, "Input"],
+Cell[249669, 4565, 673, 9, 28, "Input"],
+Cell[250345, 4576, 94, 1, 28, "Input"],
 Cell[CellGroupData[{
-Cell[250368, 4580, 438, 10, 28, "Input"],
-Cell[250809, 4592, 241558, 4333, 317, "Output"]
+Cell[250464, 4581, 438, 10, 28, "Input"],
+Cell[250905, 4593, 241610, 4334, 317, "Output"]
 }, Open  ]],
-Cell[492382, 8928, 659, 15, 104, "Input"]
+Cell[492530, 8930, 659, 15, 104, "Input"]
 }
 ]
 *)
