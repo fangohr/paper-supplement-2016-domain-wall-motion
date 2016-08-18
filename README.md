@@ -15,7 +15,9 @@ pip install moviepy
 
 - Mathematica 10
 
-Within each folder is the code which you can run in order to generate the figures.
+Within each folder is the code which you can run in order to generate the figures. The simulation data in folder figure2 can be
+generated from the scripts within the Animations folder. The data is placed here for convenience, as the simulations can take some
+time to execute.
 
 
 
